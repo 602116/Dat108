@@ -1,8 +1,20 @@
 package Dat108;
 
-public class Main {
+import javax.swing.*;
+
+public class Main extends Thread{
 
     public static void main(String[] args) {
-	// write your code here
+
+        PrintThread thread = new PrintThread();
+        DialogBox threadTwo = new DialogBox();
+
+        thread.start();
+        threadTwo.start();
+
+
+
+
+
     }
 }
